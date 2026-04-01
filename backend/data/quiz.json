@@ -1,0 +1,560 @@
+{
+
+    "quiz_name": "Perfume Finder",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What’s your gender preference?",
+        "field": "gender",
+        "type": "multiple",
+        "required": true,
+        "weight": 2,
+        "options": ["Male", "Female", "Unisex"]
+      },
+      {
+        "id": 2,
+        "question": "What vibe or personality best describes you?",
+        "field": "vibe",
+        "type": "multiple",
+        "required": true,
+        "weight": 3,
+        "options": ["Sexy", "Romantic", "Playful","Fresh", "Elegant", "Dark", "Comforting", "Bold", "Unusual", "Natural"]
+      },
+      {
+        "id": 3,
+        "question": "What’s the occasion?",
+        "field": "occasion",
+        "type": "multiple",
+        "required": true,
+        "weight": 3,
+        "options": [
+          "Office",
+          "Casual",
+          "School",
+          "Daytime Event",
+          "Travel",
+          "Date Night",
+          "Party",
+          "Formal Dinner",
+          "Theatre or Concert",
+          "Evening Out",
+          "Nightclub",
+          "Outdoor Event",
+          "Special Occasion",
+          "Formal Gala",
+          "After-hours Event",
+          "Romantic Night",
+          "Luxury Event"
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Which season or weather suits you best?",
+        "field": "season",
+        "type": "multiple",
+        "required": true,
+        "weight": 2,
+        "options": ["Spring", "Summer", "Autumn", "Winter", "All-year"]
+      },
+      {
+        "id": 5,
+        "question": "How long do you want your perfume to last?",
+        "field": "longevity_category",
+        "type": "multiple",
+        "required": true,
+        "weight": 2,
+        "options": [
+          { "label": "Soft / Moderate", "value": [0, 6] },
+          { "label": "Moderate / Strong", "value": [6, 10] },
+          { "label": "Very Strong", "value": [10, 24] }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Select the accords you love most.",
+        "field": "accords",
+        "type": "multiple",
+        "required": true,
+        "weight": 3,
+        "options": [
+          "Floral", "Fruity & Sweet", "Woody & Resinous", "Spicy & Warm", "Fresh & Clean", "Green & Earthy", "Aquatic & Marine", "Musky & Powdery", "Oriental & Exotic"
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Select the notes you love most.",
+        "field": "liked_notes",
+        "type": "multiple",
+        "required": true,
+        "weight": 3,
+        "options": [
+          "Citrus", "Floral", "Fruity", "Spicy", "Woody", "Resinous / Balsamic", "Gourmand / Sweet", "Aromatic / Herbal / Green", "Musky / Animalic", "Oriental / Warm", "Earthy / Smoky / Dry", "Marine / Fresh", "Unique"
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Do you have any notes that you hate?",
+        "field": "disliked_notes",
+        "type": "multiple",
+        "optional": true,
+        "weight": 3,
+        "options": [
+          "Citrus", "Floral", "Fruity", "Spicy", "Woody", "Resinous / Balsamic", "Gourmand / Sweet", "Aromatic / Herbal / Green", "Musky / Animalic", "Oriental / Warm", "Earthy / Smoky / Dry", "Marine / Fresh", "Unique"
+        ]
+      },
+      {
+        "id":9,
+        "question": "Do you use any other odor products (e.g., scented body lotion, deodorant, etc.), if yes, how do they smell like?",
+        "field": "secondary_accords",
+        "type": "multiple",
+        "optional": true,
+        "weight": 1,
+        "options": [
+          "Floral", "Fruity & Sweet", "Woody & Resinous", "Spicy & Warm", "Fresh & Clean", "Green & Earthy", "Aquatic & Marine", "Musky & Powdery", "Oriental & Exotic"
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Choose your preferred price range (EUR).",
+        "field": "price",
+        "type": "multiple",
+        "required": true,
+        "weight": 2,
+        "options": [
+          { "label": "Budget", "range": [0, 100] },
+          { "label": "Mid", "range": [100, 200] },
+          { "label": "Luxury", "range": [200, 500] }
+        ]
+      }
+    ],
+
+    "metadata": {
+      "accord_categories":{
+        "Floral": [
+          "Floral",
+          "White Floral",
+          "Rose",
+          "Jasmine",
+          "Tuberose"
+        ],
+        "Fruity & Sweet": [
+          "Fruity",
+          "Sweet",
+          "Vanilla",
+          "Honey",
+          "Coconut",
+          "Gourmand",
+          "Sparkling"
+        ],
+        "Woody & Resinous": [
+          "Woody",
+          "Amber",
+          "Resinous",
+          "Balsamic",
+          "Patchouli",
+          "Vetiver",
+          "Oud"
+        ],
+        "Spicy & Warm": [
+          "Spicy",
+          "Tobacco",
+          "Leather",
+          "Incense",
+          "Smoky",
+          "Boozy"
+        ],
+        "Fresh & Clean": [
+          "Fresh",
+          "Citrus",
+          "Clean",
+          "Aromatic",
+          "Minimal",
+          "Sparkling"
+        ],
+        "Green & Earthy": [
+          "Green",
+          "Herbal",
+          "Earthy",
+          "Fig",
+          "Tea",
+          "Vetiver"
+        ],
+        "Aquatic & Marine": [
+          "Aquatic",
+          "Marine",
+          "Dry",
+          "Salty"
+        ],
+        "Musky & Powdery": [
+          "Musky",
+          "Powdery"
+        ],
+        "Oriental & Exotic": [
+          "Animalic",
+          "Chypre",
+          "Metallic",
+          "Oud",
+          "Amber"
+        ]
+      },
+
+      "note_categories":{
+        "Citrus": [
+          "Bergamot",
+          "Calabrian Bergamot",
+          "Sicilian Lemon",
+          "Italian Lemon",
+          "Lemon",
+          "Mandarin",
+          "Clementine",
+          "Tangerine",
+          "Grapefruit",
+          "Orange",
+          "Italian Orange",
+          "Bitter Orange",
+          "Neroli",
+          "Petitgrain"
+        ],
+        "Floral": [
+          "Rose",
+          "Bulgarian Rose",
+          "Damask Rose",
+          "Centifolia Rose",
+          "Ta’if Rose",
+          "Turkish Rose",
+          "Grasse Rose",
+          "Jasmine",
+          "Italian Jasmine",
+          "Lily",
+          "Lily-of-the-Valley",
+          "Magnolia",
+          "Iris",
+          "Violet",
+          "Peony",
+          "Narcissus",
+          "Sweet Pea",
+          "Tuberose",
+          "Ylang-Ylang",
+          "Orange Blossom",
+          "Freesia",
+          "Orchid",
+          "Osmanthus",
+          "Heliotrope",
+          "Hyacinth",
+          "Marigold",
+          "Geranium",
+          "Palmarosa",
+          "Broom",
+          "Immortelle",
+          "Flowery facets"
+        ],
+        "Fruity": [
+          "Apple",
+          "Apricot",
+          "Black Currant",
+          "Pear",
+          "Peach",
+          "Plum",
+          "Raspberry",
+          "Cherry",
+          "Litchi",
+          "Fig",
+          "Pineapple",
+          "Passionfruit",
+          "Sapodilla",
+          "Mixed Fruits",
+          "Dried Fruits",
+          "Pumpkin"
+        ],
+        "Spicy": [
+          "Cinnamon",
+          "Clove",
+          "Nutmeg",
+          "Cardamom",
+          "Cumin",
+          "Pepper",
+          "Pink Pepper",
+          "Pink Berries",
+          "Saffron",
+          "Ginger",
+          "Coriander",
+          "Bay Leaf",
+          "Oregano",
+          "Sage",
+          "Spices"
+        ],
+        "Woody": [
+          "Cedar",
+          "Guaiac Wood",
+          "Sandalwood",
+          "Birch",
+          "Cypress",
+          "Patchouli",
+          "Vetiver",
+          "Haitian Vetiver",
+          "Woody Notes",
+          "Oakmoss",
+          "Pine Needles"
+        ],
+        "Resinous / Balsamic": [
+          "Amber",
+          "Ambergris",
+          "Labdanum",
+          "Cistus Labdanum",
+          "Opoponax",
+          "Benzoin",
+          "Elemi",
+          "Fir Resin",
+          "Tolu Balm",
+          "Myrrh",
+          "Frankincense",
+          "Incense"
+        ],
+        "Gourmand / Sweet": [
+          "Vanilla",
+          "Madagascar Vanilla",
+          "Caramel",
+          "Sugar",
+          "Honey",
+          "Tonka Bean",
+          "Milk",
+          "Almond",
+          "Coconut"
+        ],
+        "Aromatic / Herbal / Green": [
+          "Lavender",
+          "Rosemary",
+          "Thyme",
+          "Mint",
+          "Angelica",
+          "Galbanum",
+          "Green Notes",
+          "Herbs",
+          "Hay",
+          "Tea",
+          "Oolong Tea",
+          "Black Tea",
+          "Iso E Super",
+          "Ambrette",
+          "Ambrox",
+          "Ambroxan",
+          "Amyris",
+          "Mugwort"
+        ],
+        "Musky / Animalic": [
+          "Musk",
+          "White Musk",
+          "Castoreum",
+          "Leather",
+          "Ambergris",
+          "Cetalox",
+          "Animalic",
+          "Blood Accord"
+        ],
+        "Oriental / Warm": [
+          "Amber",
+          "Resinous",
+          "Benzoin",
+          "Opoponax",
+          "Vanilla",
+          "Tonka Bean",
+          "Oud",
+          "Agarwood"
+        ],
+        "Earthy / Smoky / Dry": [
+          "Vetiver",
+          "Patchouli",
+          "Birch",
+          "Tobacco",
+          "Leather",
+          "Smoky",
+          "Dry"
+        ],
+        "Marine / Fresh": [
+          "Sea Notes",
+          "Aldehydes",
+          "Marine",
+          "Metallic",
+          "Clean",
+          "Fresh"
+        ],
+        "Unique": [
+          "Cashmeran",
+          "Cetalox",
+          "Champagne Accord",
+          "Rum",
+          "Boozy",
+          "Broom",
+          "Metallic",
+          "Ta’if Rose"
+        ]
+      },
+
+      "vibe_categories": {
+        "Sexy": [
+          "Baccarat Rouge 540",
+          "Delina Exclusif",
+          "Love, Don’t Be Shy",
+          "Musc Ravageur",
+          "Herod",
+          "Side Effect",
+          "Red Tobacco",
+          "Ani",
+          "Oud for Greatness",
+          "Good Girl Gone Bad",
+          "Pegasus",
+          "Back to Black",
+          "Rehab",
+          "Blessed Baraka"
+        ],
+        "Romantic": [
+          "À la rose",
+          "Delina",
+          "Love in White",
+          "Eau Rose",
+          "Ta’if",
+          "1872 for Her",
+          "Roses Vanille",
+          "Mon Parfum Cristal",
+          "Dom Rosa",
+          "Féminité du Bois",
+          "L’Oblio"
+        ],
+        "Playful": [
+          "Meliora",
+          "Erba Pura",
+          "Lira",
+          "Kirkè",
+          "Instant Crush",
+          "Wu Long Cha",
+          "Sedley",
+          "Bergamote 22",
+          "Tel Aviv",
+          "Blanche",
+          "Bal d’Afrique",
+          "Bee"
+        ],
+        "Fresh": [
+          "Silver Mountain Water",
+          "Aventus",
+          "Sedley",
+          "Gentlewoman",
+          "Thé Noir 29",
+          "Eau des Sens",
+          "Philosykos",
+          "Do Son",
+          "London",
+          "Hacivat",
+          "Wu Long Cha",
+          "Love in White"
+        ],
+        "Elegant": [
+          "Amyris Homme",
+          "Portrait of a Lady",
+          "Interlude Man",
+          "Tolu",
+          "Ormonde Man",
+          "Santal 33",
+          "Another 13",
+          "Super Cedar",
+          "Note Vanillée",
+          "C by Clive Christian",
+          "X by Clive Christian",
+          "Royal Vintage",
+          "Eau Capitale"
+        ],
+        "Dark": [
+          "Interlude Man",
+          "Epic (56) / Epic (variants)",
+          "Fortis",
+          "Narcotico",
+          "Ursa",
+          "Oud for Greatness",
+          "Midnight Oud",
+          "Ambre Sultan",
+          "Chergui",
+          "L’Oblio",
+          "Magnetic Blend"
+        ],
+        "Comforting": [
+          "Lira",
+          "Roses Vanille",
+          "Note Vanillée",
+          "Ani",
+          "Bee",
+          "Back to Black",
+          "Vanilla",
+          "Ambre Sultan",
+          "Like This",
+          "Fat Electrician",
+          "Lost in Heaven",
+          "Love, Don’t Be Shy"
+        ],
+        "Bold": [
+          "Aventus",
+          "Interlude Man",
+          "Oud for Greatness",
+          "Red Tobacco",
+          "Side Effect",
+          "Pegasus",
+          "Herod",
+          "Royal Vintage",
+          "Ursa",
+          "Epic (56) / Epic (variants)",
+          "Fortis"
+        ],
+        "Unusual": [
+          "Secretions Magnifiques",
+          "Jasmin et Cigarette",
+          "Like This",
+          "Bat",
+          "Elephant",
+          "Odor 93",
+          "Luce",
+          "The Lover’s Tale",
+          "Lost in Heaven",
+          "Sex and the Sea",
+          "Magnetic Blend",
+          "Another 13"
+        ],
+        "Natural": [
+          "Philosykos",
+          "Do Son",
+          "Eau des Sens",
+          "Tam Dao",
+          "Fat Electrician",
+          "Vetiver",
+          "Thé Noir 29",
+          "Amyris Homme",
+          "Ormonde Man",
+          "Berlin",
+          "Eau Rose"
+        ]
+      },
+      "occasion_map": {
+        "day": [
+          "Office",
+          "Casual",
+          "School",
+          "Daytime Event",
+          "Travel"
+        ],
+        "evening": [
+          "Date Night",
+          "Party",
+          "Formal Dinner",
+          "Theatre or Concert",
+          "Evening Out"
+        ],
+        "night": [
+          "Nightclub",
+          "Outdoor Event",
+          "Special Occasion",
+          "Formal Gala",
+          "After-hours Event",
+          "Romantic Night",
+          "Luxury Event"
+        ]
+      }
+    }
+  }
